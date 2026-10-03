@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/sync-upstream.sh",
+            "timeout": 60,
+            "statusMessage": "Syncing course updates from upstream..."
+          }
+        ]
+      }
+    ]
+  }
+}
